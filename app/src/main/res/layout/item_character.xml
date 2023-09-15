@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_card_height"
+    android:layout_margin="@dimen/common_margin_min"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding_min">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="@dimen/photo_size_thumb"
+            android:layout_height="@dimen/photo_size_thumb"
+            android:src="@drawable/ic_character"
+            android:layout_marginStart="@dimen/common_margin_min"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:contentDescription="@string/description_img_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tvName"
+            tools:text="Nombre"
+            android:textSize="@dimen/title_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgPhoto"/>
+
+        <TextView
+            android:id="@+id/tvSpice"
+            tools:text="Raza"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="@id/tvName"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            tools:text="Estado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_padding_middle"
+            android:layout_marginTop="@dimen/common_margin_min"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toEndOf="@id/tvSpice"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            tools:text="Genero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            app:layout_constraintTop_toBottomOf="@id/tvSpice"
+            app:layout_constraintStart_toStartOf="@id/tvSpice"/>
+
+        <TextView
+            android:id="@+id/tvType"
+            tools:text="Tipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            app:layout_constraintTop_toBottomOf="@id/tvGender"
+            app:layout_constraintStart_toStartOf="@id/tvGender"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="item_card_height">120dp</dimen>
+    <dimen name="common_margin_min">5dp</dimen>
+    <dimen name="common_margin_default">15dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="common_padding_middle">24dp</dimen>
+    <dimen name="photo_size_thumb">88dp</dimen>
+    <dimen name="title_name">20sp</dimen>
+    <dimen name="common_height_min">48dp</dimen>
+
+</resources>

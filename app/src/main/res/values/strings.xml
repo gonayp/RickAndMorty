@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+    <string name="description_img_photo">Foto de personaje\n</string>
+    <string name="search_by_name">Search By name</string>
+    <string name="btn_search">Search</string>
+    <string name="label_alive">Alive</string>
+    <string name="label_dead">Dead</string>
+    <string name="label_unknown">Unknown</string>
+</resources>
